@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=1.0, maximum-scale=1.0"/>
+  <meta name="format-detection" content="telephone=no">
+  <meta name="robots" content="None, Noimageindex,Noarchive">
+  <title>Joy履歷作品</title>
+  <!-- browser thumbnail -->
+  <link rel="shortcut icon" href="../img/joy.png">
+  <link rel="apple-touch-icon" href="../img/joy.png">
+  <!-- framework css -->
+  <link rel="stylesheet" href="../css/uikit.min.css">
+  <link rel="stylesheet" href="../css/page.css">
+</head>
+
+<body>
+
+  <!-- loading spinner -->
+  <figure id="loading">
+    <div uk-spinner></div>
+    <div style="margin-left: 5px">加載中請等等</div>
+  </figure>
+
+  <main class="uk-display-inline-block" uk-overflow-auto>
+
+    <div class="uk-padding" style="max-width: 1200px;margin: auto;">
+      <section class="sec1" uk-scrollspy="target: > div; cls: uk-animation-fade; delay: 500">
+        <h2 class="uk-heading-line uk-text-bold bu1"><span>作品展區</span></h2>
+
+        <div class="uk-grid-collapse uk-child-width-1-2@l uk-margin-large" uk-grid>
+          <div class="uk-flex-last@m uk-card-media-right uk-cover-container">
+              <img src="../img/photo05.png" alt="" uk-cover>
+              <canvas width="600" height="400"></canvas>
+          </div>
+          <div>
+              <div class="uk-padding text_Left file">
+                <h4 class="uk-text-bold uk-margin-bottom">作品集pdf</h4>
+                <p class="">作品性質：UIUX設計</p>
+                <p class="">使用技術/插件：Photoshop、Illustrator、AdobeXD、其他相關軟體</p>
+                <a class="uk-button uk-button-text btnIconMove uk-display-block" href="../file/APP_UI作品集.pdf" uk-icon="chevron-right" target="_blank">APP_UI作品集</a>
+                <p></p>
+                <a class="uk-button uk-button-text btnIconMove uk-display-block" href="../file/ALISA木作坊-UI設計圖.pdf" uk-icon="chevron-right" target="_blank">ALISA木作坊-UI設計圖</a>
+                <p></p>
+                <a class="uk-button uk-button-text btnIconMove uk-display-block" href="../file/coffee_musem_UI設計圖.pdf" uk-icon="chevron-right" target="_blank">coffee_musem_UI設計圖</a>
+              </div>
+          </div>
+        </div>
+
+      </section>
+    </div>
+
+    <footer class="uk-light uk-text-center uk-padding-small">
+      <p class="uk-margin-remove">Copyright © 2025 Joy個人版權所有</p>
+    </footer>
+
+  </main>
+
+  <script src="../js/jquery-3.6.0.min.js"></script>
+  <script src="../js/uikit.min.js"></script>
+  <script src="../js/uikit-icons.min.js"></script>
+
+  <script>
+    //loading時間限制
+    $(document).ready(function(){
+      setTimeout( function(){ $('#loading').fadeOut(); },1000)
+    });
+  </script>
+
+</body>
+</html>
